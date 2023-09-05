@@ -1,4 +1,9 @@
 <script setup lang="ts">
+    definePageMeta ({
+        title: 'Crypto Currencies',
+        description: 'This is the crypto currencies page'
+    })
+
 import {Download, Filter, DownloadCloud} from "lucide-vue-next";
 
 const {data: crypto } = await useFetch("/api/crypto", {

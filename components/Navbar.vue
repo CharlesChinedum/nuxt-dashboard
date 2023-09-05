@@ -1,5 +1,5 @@
 <script setup lang="ts">
- import {Menu, Search} from "lucide-vue-next"
+ import {Menu, Search, Settings} from "lucide-vue-next"
 
  const options = [
     {value: 'Firefox', id:1},
@@ -27,7 +27,12 @@
             </div>
         </div>
     </div>
-    <div>logout</div>
+
+    <div>
+        <div class="w-8 h-8">
+            <Settings class="animate-spin" />
+        </div>
+    </div>
 </div>
     </nav>
 </template>
