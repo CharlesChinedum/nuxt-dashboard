@@ -1,0 +1,112 @@
+[
+  {
+    "No": 1,
+    "Name": "Bitcoin",
+    "symbol": "BTC",
+    "Last_Price": "$10153",
+    "Market_Cap": "$51191183730",
+    "Change_24H": 3.49,
+    "Image": "img",
+    "up": true
+  },
+  {
+    "No": 2,
+    "Name": "Ethereum",
+    "symbol": "ETH",
+    "Last_Price": "$425.25",
+    "Market_Cap": "$448308110",
+    "Change_24H": 0.53,
+    "Image": "img",
+    "up": true
+  },
+  {
+    "No": 3,
+    "Name": "Ripple",
+    "symbol": "XRP",
+    "Last_Price": "$1.2029",
+    "Market_Cap": "$76380043",
+    "Change_24H": 0.26,
+    "Image": "img",
+    "up": true
+  },
+  {
+    "No": 4,
+    "Name": "Litecoin",
+    "symbol": "LTC",
+    "Last_Price": "$1547.67",
+    "Market_Cap": "$61418730",
+    "Change_24H": -0.63,
+    "Image": "img",
+    "up": false
+  },
+  {
+    "No": 5,
+    "Name": "Neo",
+    "symbol": "NEO",
+    "Last_Price": "$723.48",
+    "Market_Cap": "$190767295",
+    "Change_24H": -2.18,
+    "Image": "img",
+    "orange": true
+  },
+  {
+    "No": 6,
+    "Name": "Monero",
+    "symbol": "XMR",
+    "Last_Price": "$305.16",
+    "Market_Cap": "$4778157533",
+    "Change_24H": 3.12,
+    "Image": "img",
+    "up": false
+  },
+  {
+    "No": 7,
+    "Name": "EOS",
+    "symbol": "EOS",
+    "Last_Price": "$149.18",
+    "Market_Cap": "$84449000",
+    "Change_24H": -1.42,
+    "Image": "img",
+    "up": true
+  },
+  {
+    "No": 8,
+    "Name": "Steem",
+    "symbol": "Steem",
+    "Last_Price": "$0.467813",
+    "Market_Cap": "$8358735080",
+    "Change_24H": 3.49,
+    "Image": "img",
+    "up": true
+  },
+  {
+    "No": 9,
+    "Name": "Iota",
+    "symbol": "IOTA",
+    "Last_Price": "$2.34",
+    "Market_Cap": "$6504100862",
+    "Change_24H": -1.05,
+    "Image": "img",
+    "orange": true
+  },
+  {
+    "No": 10,
+    "Name": "Dash",
+    "symbol": "DASH",
+    "Last_Price": "$747.222",
+    "Market_Cap": "$5881413815",
+    "Change_24H": 0.94,
+    "Image": "img",
+    "up": true
+  },
+  {
+    "No": 11,
+    "Name": "Waves",
+    "symbol": "NEM",
+    "Last_Price": "$181.39",
+    "Market_Cap": "$3084108676",
+    "Change_24H": -3.23,
+    "Image": "img",
+    "up": true
+  }
+]
