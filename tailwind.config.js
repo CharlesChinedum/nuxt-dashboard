@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        base: "#3B62CA",
         darkBlue: "#0e0e23",
       },
     },

@@ -2,6 +2,9 @@
 import { resolve } from "path";
 
 export default defineNuxtConfig({
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
   alias: {
     "@": resolve(__dirname, "/"),
   },

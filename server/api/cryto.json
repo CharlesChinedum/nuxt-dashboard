@@ -8,7 +8,7 @@
       "change": -0.22,
       "volume": "76,434.57 USDT",
       "up": false,
-      "image": "~/assets/images/btc-image.png"
+      "image": "https://res.cloudinary.com/dpilzo7m6/image/upload/v1694016236/images/btc-image_fiu2ww.png"
     },
     {
       "name": "ETH",
@@ -18,7 +18,7 @@
       "change": 0.23,
       "volume": "23,346.56 USDT",
       "up": true,
-      "image": "~/assets/images/eth-image.png"
+      "image": "https://res.cloudinary.com/dpilzo7m6/image/upload/v1694016236/images/eth-image_nikejo.png"
     },
     {
       "name": "XRP",
@@ -28,7 +28,7 @@
       "change": -0.42,
       "volume": "56,456.12 USDT",
       "up": false,
-      "image": "~/assets/images/xrp-image.png"
+      "image": "https://res.cloudinary.com/dpilzo7m6/image/upload/v1694016236/images/xrp-image_tzi9go.png"
     },
     {
       "name": "LTC",
@@ -38,7 +38,7 @@
       "change": -0.12,
       "volume": "34,462.57 USDT",
       "up": true,
-      "image": "~/assets/images/ltc-image.png"
+      "image": "https://res.cloudinary.com/dpilzo7m6/image/upload/v1694016238/images/ltc-image_myzyaw.png"
     }
   ]
 }

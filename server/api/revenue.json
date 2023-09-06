@@ -1,0 +1,28 @@
+{
+  "Data": [
+    {
+      "Category": "Total Revenue",
+      "Description": "Previous month vs this months",
+      "Amount": "$5,900.00",
+      "Percentage": "55%",
+      "ChangePercentage": "Higher",
+      "image": ""
+    },
+    {
+      "Category": "New Employees",
+      "Description": "Employees joined this month",
+      "Amount": "15",
+      "Percentage": "5%",
+      "ChangePercentage": "Increased",
+      "image": ""
+    },
+    {
+      "Category": "Total Expenses",
+      "Description": "Previous month vs this months",
+      "Amount": "$8,500",
+      "Percentage": "12%",
+      "ChangePercentage": "Decrease",
+      "image": ""
+    }
+  ]
+}
