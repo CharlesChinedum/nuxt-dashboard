@@ -44,6 +44,9 @@ const revenueData = toRaw(revenue.value.Data);
           <div>
             <CardProjectLaunch />
           </div>
+          <div>
+            <CardOnGoingProjects />
+          </div>
         </div>
       </div>
     </div>

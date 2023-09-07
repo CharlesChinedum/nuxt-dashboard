@@ -1,0 +1,18 @@
+{
+  "Data": [
+    {
+      "team": "Design Team",
+      "date": "25 August 2020",
+      "project": "Mobile app design",
+      "done": "6/7",
+      "image": ""
+    },
+    {
+      "team": "Design Team",
+      "date": "12 June 2020",
+      "project": "Website Redesign",
+      "done": "5/7",
+      "image": ""
+    }
+  ]
+}
