@@ -9,12 +9,19 @@ export default defineNuxtConfig({
     "@": resolve(__dirname, "/"),
   },
   modules: ["@bootstrap-vue-next/nuxt"],
-  css: ["~/assets/css/main.css", "bootstrap/dist/css/bootstrap.min.css"],
+  css: [
+    "~/assets/css/main.css",
+    "bootstrap/dist/css/bootstrap.min.css",
+    "primevue/resources/themes/lara-light-blue/theme.css",
+  ],
   devtools: { enabled: true },
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  build: {
+    transpile: ["primevue"],
   },
 });

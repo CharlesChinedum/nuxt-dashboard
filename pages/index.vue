@@ -17,35 +17,49 @@ const revenueData = toRaw(revenue.value.Data);
         <Header title="Welcome To Dashboard" />
       </div>
 
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-flow-col grid-cols-3 gap-4">
         <div class="grid gap-4 col-span-2 border-2 border-red-300">
-          <Mockup />
-          <div class="grid grid-cols-3 gap-4">
-            <div v-for="revenue in revenueData" class="grid">
-              <CardRevenue
-                :category="revenue.Category"
-                :description="revenue.Description"
-                :amount="revenue.Amount"
-                :percentage="revenue.Percentage"
-                :changePercentage="revenue.ChangePercentage"
-              />
+          <div class="grid gap-4">
+            <div>
+              <Mockup />
             </div>
-          </div>
+            <div class="grid grid-cols-3 gap-4">
+              <div v-for="revenue in revenueData" class="grid">
+                <CardRevenue
+                  :category="revenue.Category"
+                  :description="revenue.Description"
+                  :amount="revenue.Amount"
+                  :percentage="revenue.Percentage"
+                  :changePercentage="revenue.ChangePercentage"
+                />
+              </div>
+            </div>
 
-          <div class="grid">
-            <CardChart />
+            <div class="grid gap-4">
+              <CardChart />
+              <div class="grid grid-cols-2 gap-4">
+                <CardTasks />
+                <CardInquiries />
+                <div class="h-[20rem]"></div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="flex flex-col gap-4 border-2 border-red-300">
-          <div>
-            <CardTransactions />
-          </div>
-          <div>
-            <CardProjectLaunch />
-          </div>
-          <div>
-            <CardOnGoingProjects />
+          <div class="grid gap-4">
+            <div>
+              <CardTransactions />
+            </div>
+            <div>
+              <CardProjectLaunch />
+            </div>
+            <div>
+              <CardOnGoingProjects />
+            </div>
+            <div>
+              <CardWebDesign />
+            </div>
           </div>
         </div>
       </div>
