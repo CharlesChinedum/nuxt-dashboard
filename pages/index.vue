@@ -49,7 +49,7 @@ const revenueData = toRaw(revenue.value.Data);
           </div>
         </div>
 
-        <div class="flex w-full flex-col gap-4 border-2 border-red-300">
+        <div class="flex flex-col gap-4 border-2 border-red-300">
           <div class="grid gap-4">
             <div>
               <CardTransactions />
