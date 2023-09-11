@@ -17,7 +17,7 @@ const revenueData = toRaw(revenue.value.Data);
         <Header title="Welcome To Dashboard" />
       </div>
 
-      <div class="grid grid-flow-col grid-cols-3 gap-4">
+      <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-4">
         <div class="grid gap-4 col-span-2 border-2 border-red-300">
           <div class="grid gap-4">
             <div>
@@ -38,15 +38,18 @@ const revenueData = toRaw(revenue.value.Data);
             <div class="grid gap-4">
               <CardChart />
               <div class="grid grid-cols-2 gap-4">
-                <CardTasks />
+                <CardTodayTasks />
                 <CardInquiries />
-                <div class="h-[20rem]"></div>
+                <!-- <div class="h-[20rem]"></div> -->
+              </div>
+              <div>
+                <CardTasks />
               </div>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-col gap-4 border-2 border-red-300">
+        <div class="flex w-full flex-col gap-4 border-2 border-red-300">
           <div class="grid gap-4">
             <div>
               <CardTransactions />

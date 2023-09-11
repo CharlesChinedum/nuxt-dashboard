@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "task": "Evaluating the design",
+      "team": "avatar",
+      "openTask": "37",
+      "priority": "High",
+      "status": "Completed"
+    },
+    {
+      "task": "Generate ideas for design",
+      "team": "avatar",
+      "openTask": "37",
+      "priority": "Normal",
+      "status": "Pending"
+    },
+    {
+      "task": "Define the problem",
+      "team": "avatar",
+      "openTask": "37",
+      "priority": "Low",
+      "status": "Completed"
+    },
+    {
+      "task": "Empathize with users",
+      "team": "avatar",
+      "openTask": "37",
+      "priority": "High",
+      "status": "Rejected"
+    },
+    {
+      "task": "Mobile app design",
+      "team": "avatar",
+      "openTask": "57",
+      "priority": "Medium",
+      "status": "On Hold"
+    }
+  ]
+}
