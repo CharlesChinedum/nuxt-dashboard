@@ -1,4 +1,21 @@
 <script setup lang="ts">
+import { MoreHorizontal } from "lucide-vue-next";
+import ContextMenu from "primevue/contextmenu";
+
+import { ref } from "vue";
+
+const menu = ref();
+const items = ref([
+  { label: "Today", icon: "pi pi-fw pi-search" },
+  { label: "Last Week", icon: "pi pi-fw pi-trash" },
+  { label: "Last Month", icon: "pi pi-fw pi-trash" },
+  { label: "Last Year", icon: "pi pi-fw pi-trash" },
+]);
+
+const onImageClick = (event) => {
+  menu.value.show(event);
+};
+
 defineProps({
   team: String,
   date: String,
@@ -24,7 +41,16 @@ defineProps({
     </div>
 
     <div class="h-full flex flex-col gap-4 justify-between">
-      <span>...</span>
+      <div class="">
+        <div
+          @click="onImageClick"
+          aria-haspopup="true"
+          class="cursor-pointer h-8 w-8"
+        >
+          <MoreHorizontal size="17" />
+        </div>
+        <ContextMenu ref="menu" :model="items" />
+      </div>
       <span class="text-[.875rem]">{{ done }}</span>
     </div>
   </div>

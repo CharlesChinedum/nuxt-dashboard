@@ -1,25 +1,26 @@
 <script setup lang="ts">
-const show = ref(false);
+import Dropdown from "primevue/dropdown";
 
-const props = defineProps({
-  options: {
-    type: [],
-    default: "Dropdown Button",
-  },
-});
+import { ref } from "vue";
 
-const { options } = props;
+const selectedCity = ref();
+const browsers = ref([
+  { name: "Firefox" },
+  { name: "Chrome" },
+  { name: "Safari" },
+  { name: "Opera" },
+  { name: "Internet Explorer" },
+]);
 </script>
 
 <template>
-  <BDropdown
-    v-model="show"
-    text="Choose One"
-    variant="outline"
-    class="border-0 outline-none bg-white text-white"
-  >
-    <BDropdownItem v-for="option in options" :key="option.id">
-      {{ option.value }}
-    </BDropdownItem>
-  </BDropdown>
+  <div class="card flex justify-content-center">
+    <Dropdown
+      v-model="selectedCity"
+      :options="browsers"
+      optionLabel="name"
+      placeholder="Choose one"
+      class="w-full border-0 p-0 m-0"
+    />
+  </div>
 </template>

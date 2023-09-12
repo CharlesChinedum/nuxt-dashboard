@@ -17,7 +17,7 @@ const revenueData = toRaw(revenue.value.Data);
         <Header title="Welcome To Dashboard" />
       </div>
 
-      <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="grid md:grid-cols-1 xl:grid-cols-3 gap-4">
         <div class="grid gap-4 col-span-2 border-2 border-red-300">
           <div class="grid gap-4">
             <div>

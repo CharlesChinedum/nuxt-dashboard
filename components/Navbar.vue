@@ -11,13 +11,13 @@ import {
 } from "lucide-vue-next";
 import ContextMenu from "primevue/contextmenu";
 
-const options = [
-  { value: "Firefox", id: 1 },
-  { value: "Chrome", id: 2 },
-  { value: "Safari", id: 3 },
-  { value: "Opera", id: 4 },
-  { value: "Internet Explorer", id: 5 },
-];
+// const options = [
+//   { value: "Firefox", id: 1 },
+//   { value: "Chrome", id: 2 },
+//   { value: "Safari", id: 3 },
+//   { value: "Opera", id: 4 },
+//   { value: "Internet Explorer", id: 5 },
+// ];
 
 import { ref } from "vue";
 
@@ -46,7 +46,7 @@ const onImageClick = (event) => {
           class="flex items-center rounded-l-md rounded-r-lg outline-[1px] outline outline-purple-200"
         >
           <div class="px-3">
-            <Dropdown :options="options" />
+            <Dropdown />
           </div>
           <div class="flex border-l-[1px] border-purple-200">
             <input

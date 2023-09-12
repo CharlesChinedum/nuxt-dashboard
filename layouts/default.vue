@@ -5,9 +5,9 @@
         <Sidebar />
       </div>
       <div
-        class="flex flex-col w-full xl:pl-[15rem] border-[5px] borde-red-400"
+        class="flex flex-col w-full lg:pl-[15rem] border-[5px] borde-red-400"
       >
-        <div>
+        <div class="hidden md:block">
           <Navbar />
         </div>
         <main>

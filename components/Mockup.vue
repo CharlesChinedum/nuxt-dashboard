@@ -1,7 +1,9 @@
 <template>
   <div class="relative">
-    <div class="flex items-center py-[0.8rem] bg-indigo-500 rounded-2xl">
-      <div class="absolute bottom-0 left-0">
+    <div
+      class="flex flex-col md:flex-row items-center py-[0.8rem] bg-indigo-500 rounded-2xl"
+    >
+      <div class="md:absolute bottom-0 left-0">
         <img src="~/assets/images/mockup.png" alt="mockup" />
       </div>
       <span class="ml-[20rem]"></span>
