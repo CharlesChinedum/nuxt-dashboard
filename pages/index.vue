@@ -21,7 +21,7 @@ const revenueData = toRaw(revenue.value.Data);
         <div class="grid gap-4 col-span-2 border-2 border-red-300">
           <div class="grid gap-4">
             <div>
-              <!-- <Mockup /> -->
+              <Mockup />
             </div>
             <div class="grid grid-cols-3 gap-4">
               <div

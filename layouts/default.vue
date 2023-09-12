@@ -1,12 +1,12 @@
 <template>
   <div class="bg-[#e2e3e5]">
     <div class="w-full flex relative">
-      <!-- <div class="fixed h-[100vh] w-[15rem] bg-darkBlue">
+      <div class="hidden lg:block fixed h-[100vh] w-[15rem] bg-darkBlue">
         <Sidebar />
-      </div> -->
-
-      <div class="flex flex-col w-full border-[5px] borde-red-400">
-        <!-- lg:pl-[15rem] -->
+      </div>
+      <div
+        class="flex flex-col w-full xl:pl-[15rem] border-[5px] borde-red-400"
+      >
         <div>
           <Navbar />
         </div>

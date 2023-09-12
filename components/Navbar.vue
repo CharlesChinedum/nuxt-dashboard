@@ -1,5 +1,15 @@
 <script setup lang="ts">
-import { Menu, Search, Settings } from "lucide-vue-next";
+import {
+  Menu,
+  Search,
+  Settings,
+  MessageSquare,
+  Bell,
+  Maximize,
+  Moon,
+  Sun,
+} from "lucide-vue-next";
+import ContextMenu from "primevue/contextmenu";
 
 const options = [
   { value: "Firefox", id: 1 },
@@ -8,6 +18,21 @@ const options = [
   { value: "Opera", id: 4 },
   { value: "Internet Explorer", id: 5 },
 ];
+
+import { ref } from "vue";
+
+const menu = ref();
+const items = ref([
+  { label: "French", icon: "pi pi-fw pi-search" },
+  { label: "Germany", icon: "pi pi-fw pi-trash" },
+  { label: "Italy", icon: "pi pi-fw pi-trash" },
+  { label: "Russia", icon: "pi pi-fw pi-trash" },
+  { label: "Spain", icon: "pi pi-fw pi-trash" },
+]);
+
+const onImageClick = (event) => {
+  menu.value.show(event);
+};
 </script>
 
 <template>
@@ -38,10 +63,35 @@ const options = [
         </div>
       </div>
 
-      <div>
-        <div class="w-8 h-8">
-          <Settings class="animate-spin" />
+      <div class="flex items-center gap-4">
+        <Sun />
+        <Moon />
+        <div class="">
+          <div
+            @click="onImageClick"
+            aria-haspopup="true"
+            class="cursor-pointer h-8 w-8"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+              alt=""
+              class="rounded-full h-full w-full object-cover"
+            />
+          </div>
+          <ContextMenu ref="menu" :model="items" />
         </div>
+        <Maximize />
+        <Bell />
+        <MessageSquare />
+        <div class="w-8 h-8">
+          <img
+            src="~/assets/images/user.jpg"
+            class="rounded-full"
+            alt="user picture"
+          />
+        </div>
+        <Menu />
+        <Settings class="animate-spin" />
       </div>
     </div>
   </nav>
