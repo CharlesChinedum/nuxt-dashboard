@@ -21,10 +21,13 @@ const revenueData = toRaw(revenue.value.Data);
         <div class="grid gap-4 col-span-2 border-2 border-red-300">
           <div class="grid gap-4">
             <div>
-              <Mockup />
+              <!-- <Mockup /> -->
             </div>
             <div class="grid grid-cols-3 gap-4">
-              <div v-for="revenue in revenueData" class="grid">
+              <div
+                v-for="revenue in revenueData"
+                class="grid col-span-2 md:col-span-1 lg:col-span-1"
+              >
                 <CardRevenue
                   :category="revenue.Category"
                   :description="revenue.Description"
@@ -37,7 +40,7 @@ const revenueData = toRaw(revenue.value.Data);
 
             <div class="grid gap-4">
               <CardChart />
-              <div class="grid grid-cols-2 gap-4">
+              <div class="grid md:grid-cols-2 gap-4">
                 <CardTodayTasks />
                 <CardInquiries />
                 <!-- <div class="h-[20rem]"></div> -->
@@ -49,7 +52,9 @@ const revenueData = toRaw(revenue.value.Data);
           </div>
         </div>
 
-        <div class="flex flex-col gap-4 border-2 border-red-300">
+        <div
+          class="lg:gap-4 border-2 md:col-span-2 lg:col-span-1 border-red-300"
+        >
           <div class="grid gap-4">
             <div>
               <CardTransactions />
