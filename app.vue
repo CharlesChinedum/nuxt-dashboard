@@ -1,5 +1,13 @@
+<script setup lang="ts">
+// type Theme = "light" | "dark";
+
+// const setColorTheme = (newTheme: Theme) => {
+//   useColorMode().preference = newTheme;
+// }
+</script>
+
 <template>
-  <div>
+  <div class="h-screen">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

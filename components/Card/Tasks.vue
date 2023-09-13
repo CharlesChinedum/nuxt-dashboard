@@ -49,8 +49,10 @@ const tasksData = toRaw(tasks.value.data);
         </div>
       </div>
 
-      <div class="bg-white p-4 border-[1px] border-slate-200">
-        <CardTasksTable :tasks="tasksData" />
+      <div class="">
+        <div class="bg-white p-4 border-[1px] border-slate-200">
+          <CardTasksTable :tasks="tasksData" />
+        </div>
       </div>
     </div>
   </div>

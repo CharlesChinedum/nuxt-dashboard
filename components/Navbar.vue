@@ -10,6 +10,13 @@ import {
   Sun,
 } from "lucide-vue-next";
 import ContextMenu from "primevue/contextmenu";
+import { ref } from "vue";
+
+type Theme = "light" | "dark";
+
+const setColorTheme = (newTheme: Theme) => {
+  useColorMode().preference = newTheme;
+};
 
 // const options = [
 //   { value: "Firefox", id: 1 },
@@ -18,8 +25,6 @@ import ContextMenu from "primevue/contextmenu";
 //   { value: "Opera", id: 4 },
 //   { value: "Internet Explorer", id: 5 },
 // ];
-
-import { ref } from "vue";
 
 const menu = ref();
 const items = ref([
@@ -37,7 +42,7 @@ const onImageClick = (event) => {
 
 <template>
   <nav
-    class="flex items-center bg-white py-3 px-5 w-full shadow-md shadow-slate-300"
+    class="flex items-center bg-white py-3 px-5 w-full shadow-md light:shadow-slate-300"
   >
     <div class="flex w-full justify-between items-center">
       <div class="flex gap-5 items-center">
@@ -64,8 +69,14 @@ const onImageClick = (event) => {
       </div>
 
       <div class="flex items-center gap-4">
-        <Sun />
-        <Moon />
+        <button
+          @click="
+            setColorTheme($colorMode.preference === 'dark' ? 'light' : 'dark')
+          "
+        >
+          <Moon v-if="$colorMode.value == 'light'" />
+          <Sun v-else />
+        </button>
         <div class="">
           <div
             @click="onImageClick"

@@ -15,8 +15,11 @@ module.exports = {
         darkBlue: "#0e0e23",
         textHeader: "#1d212f",
         textMuted: "#8f8fb1",
+        darkTheme: "#0e0e23",
+        darkBody: "#24243e",
       },
     },
   },
   plugins: [],
+  darkMode: "class",
 };

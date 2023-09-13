@@ -3,7 +3,6 @@ const { data: projects } = await useFetch("/api/projects", {
   transform: (_projects) => _projects.data,
 });
 const projectsData = toRaw(projects.value.Data);
-console.log(projectsData);
 </script>
 
 <template>

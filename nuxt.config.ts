@@ -8,7 +8,10 @@ export default defineNuxtConfig({
   alias: {
     "@": resolve(__dirname, "/"),
   },
-  modules: ["@bootstrap-vue-next/nuxt"],
+  modules: ["@bootstrap-vue-next/nuxt", "@nuxtjs/color-mode"],
+  colorMode: {
+    classSuffix: "",
+  },
   css: [
     "~/assets/css/main.css",
     "bootstrap/dist/css/bootstrap.min.css",

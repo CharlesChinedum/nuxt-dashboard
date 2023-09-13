@@ -12,21 +12,21 @@ const revenueData = toRaw(revenue.value.Data);
 </script>
 <template>
   <div>
-    <div class="w-full px-3 py-4">
+    <div class="px-3 py-4">
       <div class="flex w-full justify-between pb-10">
         <Header title="Welcome To Dashboard" />
       </div>
 
-      <div class="grid md:grid-cols-1 xl:grid-cols-3 gap-4">
-        <div class="grid gap-4 col-span-2 border-2 border-red-300">
-          <div class="grid gap-4">
-            <div>
+      <div class="grid md:grid-cols-1 xl:grid-cols-3 gap-3">
+        <div class="w-full grid gap-3 col-span-2 border-2 border-red-300">
+          <div class="grid gap-3 border-[10px] border-green-500">
+            <div class="">
               <Mockup />
             </div>
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid grid-cols-3 gap-3">
               <div
                 v-for="revenue in revenueData"
-                class="grid col-span-2 md:col-span-1 lg:col-span-1"
+                class="grid col-span-3 md:col-span-1 lg:col-span-1"
               >
                 <CardRevenue
                   :category="revenue.Category"
@@ -38,14 +38,14 @@ const revenueData = toRaw(revenue.value.Data);
               </div>
             </div>
 
-            <div class="grid gap-4">
+            <div class="grid gap-3">
               <CardChart />
-              <div class="grid md:grid-cols-2 gap-4">
+              <div class="grid md:grid-cols-2 gap-3">
                 <CardTodayTasks />
                 <CardInquiries />
-                <!-- <div class="h-[20rem]"></div> -->
+                <!--  <div class="h-[20rem]"></div>  -->
               </div>
-              <div>
+              <div class="overflow-x-auto">
                 <CardTasks />
               </div>
             </div>
@@ -53,9 +53,9 @@ const revenueData = toRaw(revenue.value.Data);
         </div>
 
         <div
-          class="lg:gap-4 border-2 md:col-span-2 lg:col-span-1 border-red-300"
+          class="lg:gap-3 border-5 col-span-2 w-full md:col-span-2 lg:col-span-1 border-red-300"
         >
-          <div class="grid gap-4">
+          <div class="grid gap-3">
             <div>
               <CardTransactions />
             </div>
