@@ -18,8 +18,8 @@ const revenueData = toRaw(revenue.value.Data);
       </div>
 
       <div class="grid md:grid-cols-1 xl:grid-cols-3 gap-3">
-        <div class="w-full grid gap-3 col-span-2 border-2 border-red-300">
-          <div class="grid gap-3 border-[10px] border-green-500">
+        <div class="w-full grid gap-3 col-span-2">
+          <div class="grid gap-3">
             <div class="">
               <Mockup />
             </div>
@@ -52,9 +52,7 @@ const revenueData = toRaw(revenue.value.Data);
           </div>
         </div>
 
-        <div
-          class="lg:gap-3 border-5 col-span-2 w-full md:col-span-2 lg:col-span-1 border-red-300"
-        >
+        <div class="lg:gap-3 col-span-2 w-full md:col-span-2 lg:col-span-1">
           <div class="grid gap-3">
             <div>
               <CardTransactions />
