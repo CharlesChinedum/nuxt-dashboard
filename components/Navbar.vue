@@ -42,13 +42,14 @@ const onImageClick = (event) => {
 
 <template>
   <nav
-    class="flex items-center bg-white py-3 px-5 w-full shadow-md light:shadow-slate-300"
+    :class="[$colorMode.preference == 'dark' ? 'bg-darkTheme' : 'bg-white']"
+    class="flex items-center py-3 px-5 w-full shadow-md light:shadow-slate-300"
   >
     <div class="flex w-full justify-between items-center">
       <div class="flex gap-5 items-center">
         <Menu />
         <div
-          class="flex items-center rounded-l-md rounded-r-lg outline-[1px] outline outline-purple-200"
+          class="flex items-center rounded-l-md rounded-r-lg outline-[1px] outline outline-purple-200 dark:outline-slate-600"
         >
           <div class="px-3">
             <Dropdown />
@@ -56,7 +57,10 @@ const onImageClick = (event) => {
           <div class="flex border-l-[1px] border-purple-200">
             <input
               type="text"
-              class="border-0 outline-0 w-full px-3"
+              :class="[
+                $colorMode.preference == 'dark' ? 'bg-darkTheme' : 'bg-white',
+              ]"
+              class="border-0 outline-0 w-full px-3 dark:text-white"
               placeholder="search for anything..."
             />
             <button
@@ -68,7 +72,7 @@ const onImageClick = (event) => {
         </div>
       </div>
 
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-4 dark:text-slate-300">
         <button
           @click="
             setColorTheme($colorMode.preference === 'dark' ? 'light' : 'dark')

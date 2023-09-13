@@ -9,11 +9,14 @@ const inquiries = [
 ];
 </script>
 <template>
-  <div class="bg-white rounded-2xl">
+  <div
+    :class="[$colorMode.preference == 'dark' ? 'bg-darkTheme' : 'bg-white']"
+    class="rounded-2xl"
+  >
     <div class="flex h-full justify-between flex-col w-full p-4">
       <div class="flex flex-col">
         <span
-          class="text-[14px] text-textHeader font-extrabold tracking-[.2px] uppercase mb-1"
+          class="text-[14px] text-textHeader dark:text-white font-extrabold tracking-[.2px] uppercase mb-1"
         >
           Top Inquiries
         </span>
@@ -25,7 +28,7 @@ const inquiries = [
       <div class="flex flex-col" v-for="inquiry in inquiries">
         <div class="flex justify-between">
           <div class="w-[50%]">
-            <span>{{ inquiry.category }}</span>
+            <span class="dark:text-slate-400">{{ inquiry.category }}</span>
           </div>
           <div class="w-[50%] flex items-center gap-3">
             <div class="w-[70%]">

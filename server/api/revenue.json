@@ -6,7 +6,8 @@
       "Amount": "$5,900.00",
       "Percentage": "55%",
       "ChangePercentage": "Higher",
-      "image": ""
+      "image": "",
+      "up": true
     },
     {
       "Category": "New Employees",
@@ -14,7 +15,8 @@
       "Amount": "15",
       "Percentage": "5%",
       "ChangePercentage": "Increased",
-      "image": ""
+      "image": "",
+      "up": true
     },
     {
       "Category": "Total Expenses",
@@ -22,7 +24,8 @@
       "Amount": "$8,500",
       "Percentage": "12%",
       "ChangePercentage": "Decrease",
-      "image": ""
+      "image": "",
+      "up": false
     }
   ]
 }

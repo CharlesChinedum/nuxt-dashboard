@@ -6,11 +6,14 @@ const projectsData = toRaw(projects.value.Data);
 </script>
 
 <template>
-  <div class="bg-white rounded-2xl">
+  <div
+    :class="[$colorMode.preference == 'dark' ? 'bg-darkTheme' : 'bg-white']"
+    class="rounded-2xl"
+  >
     <div class="flex flex-col gap-4 justify-between w-full p-4">
       <div class="flex flex-col gap-1">
         <span
-          class="text-[13px] text-[#1d212f] tracking-[.3px] leading-[1] font-bold uppercase"
+          class="text-[13px] text-[#1d212f] dark:text-white tracking-[.3px] leading-[1] font-bold uppercase"
           >ON GOING PROJECTS</span
         >
         <span class="text-[12px] text-[#8f8fb1] tracking-[.3px]"

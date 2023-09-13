@@ -14,7 +14,11 @@ const cryptoData = toRaw(crypto.value.coins);
   <div>
     <div class="w-full px-3 py-4">
       <div class="flex w-full justify-between">
-        <Header title="Crypto Market" />
+        <Header
+          title="Crypto Market"
+          from="Crypto Currencies"
+          to="Crypto-Market"
+        />
       </div>
 
       <!-- Cards -->
@@ -50,7 +54,10 @@ const cryptoData = toRaw(crypto.value.coins);
       </div>
 
       <!-- Table -->
-      <div class="bg-white p-4 rounded-xl">
+      <div
+        :class="[$colorMode.preference == 'dark' ? 'bg-darkTheme' : 'bg-white']"
+        class="p-4 rounded-xl"
+      >
         <Table />
       </div>
     </div>

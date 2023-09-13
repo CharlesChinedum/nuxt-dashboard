@@ -20,7 +20,7 @@ const browsers = ref([
       :options="browsers"
       optionLabel="name"
       placeholder="Choose one"
-      class="w-full border-0 p-0 m-0"
+      :class="['w-full border-0 p-0 m-0']"
     />
   </div>
 </template>

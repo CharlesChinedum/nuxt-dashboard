@@ -23,12 +23,15 @@ const tasksData = toRaw(tasks.value.data);
 </script>
 
 <template>
-  <div class="bg-white rounded-2xl">
+  <div
+    :class="[$colorMode.preference == 'dark' ? 'bg-darkTheme' : 'bg-white']"
+    class="rounded-2xl"
+  >
     <div class="flex flex-col w-full p-4">
       <div class="w-full flex justify-between">
         <div class="flex flex-col">
           <h2
-            class="text-[14px] text-[#1d212f] tracking-[.3px] leading-[1] font-bold uppercase"
+            class="text-[14px] text-[#1d212f] dark:text-white tracking-[.3px] leading-[1] font-bold uppercase"
           >
             Tasks
           </h2>

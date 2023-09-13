@@ -14,14 +14,20 @@ defineProps({
 });
 </script>
 <template>
-  <div class="w-full bg-white rounded-2xl">
+  <div
+    :class="[$colorMode.preference == 'dark' ? 'bg-darkTheme' : 'bg-white']"
+    class="w-full rounded-2xl"
+  >
     <div class="px-4 py-4 w-full flex items-center">
       <div class="w-full">
-        <h2 class="text-[14px] font-medium">{{ symbol }}</h2>
+        <h2 class="text-[14px] dark:text-slate-400 font-medium">
+          {{ symbol }}
+        </h2>
         <div class="flex gap-2 items-end mb-1">
-          <span class="text-[1.3125rem] font-medium leading-tight">{{
-            amount
-          }}</span>
+          <span
+            class="text-[1.3125rem] dark:text-white font-medium leading-tight"
+            >{{ amount }}</span
+          >
           <span class="text-[12px] font-medium text-[#8f8fb1]">{{
             price
           }}</span>

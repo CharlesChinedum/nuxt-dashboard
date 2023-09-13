@@ -14,7 +14,11 @@ const revenueData = toRaw(revenue.value.Data);
   <div>
     <div class="px-3 py-4">
       <div class="flex w-full justify-between pb-10">
-        <Header title="Welcome To Dashboard" />
+        <Header
+          title="Welcome To Dashboard"
+          from="Home"
+          to="Project Dashboard"
+        />
       </div>
 
       <div class="grid md:grid-cols-1 xl:grid-cols-3 gap-3">
@@ -34,6 +38,7 @@ const revenueData = toRaw(revenue.value.Data);
                   :amount="revenue.Amount"
                   :percentage="revenue.Percentage"
                   :changePercentage="revenue.ChangePercentage"
+                  :up="revenue.up"
                 />
               </div>
             </div>

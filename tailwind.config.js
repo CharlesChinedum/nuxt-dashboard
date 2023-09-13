@@ -17,6 +17,7 @@ module.exports = {
         textMuted: "#8f8fb1",
         darkTheme: "#0e0e23",
         darkBody: "#24243e",
+        darkText: "#d0d0e2",
       },
     },
   },

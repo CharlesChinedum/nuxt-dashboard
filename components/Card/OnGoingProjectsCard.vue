@@ -26,7 +26,10 @@ defineProps({
 </script>
 
 <template>
-  <div class="w-full h-full flex justify-between p-3 bg-gray-100 rounded-2xl">
+  <div
+    :class="[$colorMode.preference == 'dark' ? 'bg-darkBody' : 'bg-gray-100 ']"
+    class="w-full h-full flex justify-between p-3 rounded-2xl"
+  >
     <div class="h-full flex flex-col gap-4 justify-between">
       <div class="flex gap-2">
         <div>X</div>
