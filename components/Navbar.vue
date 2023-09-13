@@ -38,6 +38,11 @@ const items = ref([
 const onImageClick = (event) => {
   menu.value.show(event);
 };
+
+let sidebar = useSidebar();
+const handleSidebar = () => {
+  sidebar.value = !sidebar.value;
+};
 </script>
 
 <template>
@@ -47,7 +52,9 @@ const onImageClick = (event) => {
   >
     <div class="flex w-full justify-between items-center">
       <div class="flex gap-5 items-center">
-        <Menu />
+        <div @click="handleSidebar">
+          <Menu />
+        </div>
         <div
           class="flex items-center rounded-l-md rounded-r-lg outline-[1px] outline outline-purple-200 dark:outline-slate-600"
         >
