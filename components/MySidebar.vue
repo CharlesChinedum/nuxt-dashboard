@@ -19,13 +19,23 @@ const navlinks = [
   },
 ];
 const sidebar = useSidebar();
+const mobileSidebar = useMobileSidebar();
 // console.log(count.value);
 </script>
 
 <template>
   <div>
-    <div class="flex justify-center p-3 border-b-[1px] border-gray-700">
+    <div
+      class="flex justify-between lg:justify-center items-center p-3 border-b-[1px] border-gray-700"
+    >
       <img src="~/assets/images/logo.png" alt="logo" />
+
+      <div
+        @click="mobileSidebar = !mobileSidebar"
+        class="flex justify-center items-center w-8 h-8 rounded-full bg-darkBody"
+      >
+        <span class="lg:hidden font-bold text-slate-300">X</span>
+      </div>
     </div>
 
     <div class="pl-3 flex flex-col gap-[1.5rem]">

@@ -30,7 +30,7 @@ const onImageClick = (event) => {
   menu.value.show(event);
 };
 
-// let sidebar = useMobileSidebar();
+let sidebar = useMobileSidebar();
 // const handleMobileSidebar = () => {
 //   sidebar.value = !sidebar.value;
 // };
@@ -38,7 +38,6 @@ const dropMenu = ref(false);
 const handleDropMenu = () => {
   dropMenu.value = !dropMenu.value;
 };
-const visible = useMobileSidebar();
 </script>
 <template>
   <nav>
@@ -49,7 +48,7 @@ const visible = useMobileSidebar();
       <div class="flex items-center justify-between px-3 py-2">
         <!-- <Button icon="pi pi-arrow-right" @click="visible = true" /> -->
         <div>
-          <Menu @click="visible = true" class="dark:text-slate-400" />
+          <Menu @click="sidebar = !sidebar" class="dark:text-slate-400" />
         </div>
         <div class="flex justify-center">
           <img

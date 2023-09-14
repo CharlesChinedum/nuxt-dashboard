@@ -3,8 +3,8 @@ import Sidebar from "primevue/sidebar";
 import { ref } from "vue";
 
 // const visible = ref(false);
-const visible = useMobileSidebar();
 
+const mobileSidebar = useMobileSidebar();
 const sidebar = useSidebar();
 </script>
 <template>
@@ -14,6 +14,13 @@ const sidebar = useSidebar();
       <div
         :class="[sidebar ? ' w-[15rem]' : 'w-[5rem]']"
         class="hidden lg:block fixed h-[100vh] bg-darkBlue"
+      >
+        <MySidebar />
+      </div>
+
+      <div
+        :class="[mobileSidebar ? ' w-[15rem]' : 'hidden']"
+        class="lg:hidden fixed h-[100vh] bg-darkBlue z-20"
       >
         <MySidebar />
       </div>
