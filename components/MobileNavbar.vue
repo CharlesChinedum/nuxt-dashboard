@@ -38,6 +38,7 @@ const dropMenu = ref(false);
 const handleDropMenu = () => {
   dropMenu.value = !dropMenu.value;
 };
+const visible = useMobileSidebar();
 </script>
 <template>
   <nav>
@@ -46,8 +47,9 @@ const handleDropMenu = () => {
       class="w-full"
     >
       <div class="flex items-center justify-between px-3 py-2">
+        <!-- <Button icon="pi pi-arrow-right" @click="visible = true" /> -->
         <div>
-          <Menu class="dark:text-slate-400" />
+          <Menu @click="visible = true" class="dark:text-slate-400" />
         </div>
         <div class="flex justify-center">
           <img
@@ -64,8 +66,8 @@ const handleDropMenu = () => {
           />
         </div>
         <div class="flex items-center">
-          <div class="w-8 h-8" @click="handleDropMenu">
-            <MoreVertical class="dark:text-slate-400" />
+          <div class="w-8 h-8">
+            <MoreVertical @click="handleDropMenu" class="dark:text-slate-400" />
           </div>
           <div class="w-8 h-8">
             <Settings class="animate-spin dark:text-slate-400" />

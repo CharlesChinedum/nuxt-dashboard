@@ -5,6 +5,7 @@ defineProps({
   amount: String,
   percentage: String,
   changePercentage: String,
+  image: String,
   up: Boolean,
 });
 </script>
@@ -47,9 +48,13 @@ defineProps({
           :class="[
             $colorMode.preference == 'dark' ? 'bg-darkBody' : 'bg-indigo-100',
           ]"
-          class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-100"
+          class="flex items-center justify-center w-10 h-10 rounded-full"
         >
-          <span>X</span>
+          <img
+            :src="image"
+            class="text-indigo-500 fill-indigo-500"
+            :alt="category"
+          />
         </div>
       </div>
     </div>

@@ -38,7 +38,7 @@ const { title, from, to } = props;
       </div>
       <div>
         <button
-          class="flex gap-2 items-center text-white bg-indigo-500 py-2 px-3 rounded-[0.2rem]"
+          class="flex gap-2 items-center text-white bg-indigo-500 py-2 px-2 md:px-3 rounded-[0.2rem]"
         >
           <DownloadCloud :size="15" />
           <span class="text-sm dark:text-white">Download Report</span>

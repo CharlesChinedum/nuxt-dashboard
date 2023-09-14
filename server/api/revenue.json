@@ -6,7 +6,7 @@
       "Amount": "$5,900.00",
       "Percentage": "55%",
       "ChangePercentage": "Higher",
-      "image": "",
+      "image": "https://res.cloudinary.com/dpilzo7m6/image/upload/v1694698090/images/revenue_cjiubg.svg",
       "up": true
     },
     {
@@ -15,7 +15,7 @@
       "Amount": "15",
       "Percentage": "5%",
       "ChangePercentage": "Increased",
-      "image": "",
+      "image": "https://res.cloudinary.com/dpilzo7m6/image/upload/v1694698090/images/employees_ossohq.svg",
       "up": true
     },
     {
@@ -24,7 +24,7 @@
       "Amount": "$8,500",
       "Percentage": "12%",
       "ChangePercentage": "Decrease",
-      "image": "",
+      "image": "https://res.cloudinary.com/dpilzo7m6/image/upload/v1694698090/images/expenses_dhhsi4.svg",
       "up": false
     }
   ]

@@ -39,6 +39,7 @@ const revenueData = toRaw(revenue.value.Data);
                   :percentage="revenue.Percentage"
                   :changePercentage="revenue.ChangePercentage"
                   :up="revenue.up"
+                  :image="revenue.image"
                 />
               </div>
             </div>

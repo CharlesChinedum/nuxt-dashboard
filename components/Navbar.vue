@@ -85,14 +85,14 @@ const handleSidebar = () => {
             setColorTheme($colorMode.preference === 'dark' ? 'light' : 'dark')
           "
         >
-          <Moon v-if="$colorMode.value == 'light'" />
-          <Sun v-else />
+          <Moon v-if="$colorMode.value == 'light'" size="20" />
+          <Sun v-else size="20" />
         </button>
         <div class="">
           <div
             @click="onImageClick"
             aria-haspopup="true"
-            class="cursor-pointer h-8 w-8"
+            class="cursor-pointer h-5 w-5"
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
@@ -102,18 +102,19 @@ const handleSidebar = () => {
           </div>
           <ContextMenu ref="menu" :model="items" />
         </div>
-        <Maximize />
-        <Bell />
-        <MessageSquare />
-        <div class="w-8 h-8">
+        <Maximize size="20" />
+        <Bell size="20" />
+        <MessageSquare size="20" />
+
+        <div class="w-7 h-7">
           <img
             src="~/assets/images/user.jpg"
             class="rounded-full"
             alt="user picture"
           />
         </div>
-        <Menu />
-        <Settings class="animate-spin" />
+        <Menu size="20" />
+        <Settings class="animate-spin" size="20" />
       </div>
     </div>
   </nav>
