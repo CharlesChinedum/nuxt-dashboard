@@ -13,7 +13,7 @@ const { title, from, to } = props;
 </script>
 
 <template>
-  <div class="flex flex-col lg:flex-row justify-between w-full">
+  <div class="flex flex-col gap-3 lg:gap-0 lg:flex-row justify-between w-full">
     <div class="flex flex-col gal-1">
       <h1 class="text-darkBlue dark:text-white text-2xl">{{ title }}</h1>
       <span class="text-[14px] dark:text-slate-200"
@@ -38,7 +38,7 @@ const { title, from, to } = props;
       </div>
       <div>
         <button
-          class="flex gap-2 items-center text-white bg-indigo-500 py-2 px-2 md:px-3 rounded-[0.2rem]"
+          class="flex gap-1 md:gap-2 items-center text-white text-xs md:text-sm bg-indigo-500 py-2 px-2 md:px-3 rounded-[0.2rem]"
         >
           <DownloadCloud :size="15" />
           <span class="text-sm dark:text-white">Download Report</span>

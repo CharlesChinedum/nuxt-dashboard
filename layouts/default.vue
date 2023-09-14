@@ -8,7 +8,7 @@ const visible = useMobileSidebar();
 const sidebar = useSidebar();
 </script>
 <template>
-  <div class="bg-[#e2e3e5] dark:bg-darkBody">
+  <div class="flex bg-[#e2e3e5] dark:bg-darkBody">
     <div class="w-full flex relative">
       <!-- Desktop Sidebar -->
       <div
