@@ -48,7 +48,10 @@ const handleDropMenu = () => {
       <div class="flex items-center justify-between px-3 py-2">
         <!-- <Button icon="pi pi-arrow-right" @click="visible = true" /> -->
         <div>
-          <Menu @click="sidebar = !sidebar" class="dark:text-slate-400" />
+          <Menu
+            @click="sidebar = !sidebar"
+            class="dark:text-slate-400 hover:cursor-pointer"
+          />
         </div>
         <div class="flex justify-center">
           <img

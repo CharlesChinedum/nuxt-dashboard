@@ -32,9 +32,9 @@ const mobileSidebar = useMobileSidebar();
 
       <div
         @click="mobileSidebar = !mobileSidebar"
-        class="flex justify-center items-center w-8 h-8 rounded-full bg-darkBody"
+        class="flex justify-center items-center lg:hidden hover:cursor-pointer w-8 h-8 rounded-full bg-darkBody"
       >
-        <span class="lg:hidden font-bold text-slate-300">X</span>
+        <span class="font-bold text-slate-300">X</span>
       </div>
     </div>
 
