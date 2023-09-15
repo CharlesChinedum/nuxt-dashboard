@@ -28,7 +28,7 @@ defineProps({
           </span>
         </div>
         <div>
-          <h1 class="text-[1.3125rem] text-[#1d212f] font-bold">
+          <h1 class="text-[1.3125rem] text-[#1d212f] dark:text-slate-500 font-bold">
             {{ amount }}
           </h1>
           <span

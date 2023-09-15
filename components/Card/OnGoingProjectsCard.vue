@@ -63,7 +63,7 @@ defineProps({
             />
           </div>
         </div>
-        <span class="text-[.875rem] text-darkBlue ml-12">{{ team }}</span>
+        <span class="text-[.875rem] text-darkBlue dark:text-slate-400 ml-12">{{ team }}</span>
       </div>
       <div class="flex flex-col">
         <span class="text-[10px] text-base dark:text-slate-400 font-medium uppercase">{{
