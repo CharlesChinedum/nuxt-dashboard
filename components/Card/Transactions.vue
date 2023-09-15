@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { CornerRightUp, CornerRightDown  } from 'lucide-vue-next';
+
 defineProps({
   Image: String,
   Task: String,
@@ -52,9 +54,13 @@ const transactionData = toRaw(transaction.value.Data);
               </div>
             </div>
             <div class="flex flex-col">
+            <div class="flex items-center gap-1">
               <span class="text-[15px] text-[#1d212f] font-medium">{{
                 transaction.Amount
               }}</span>
+              <CornerRightUp v-if="transaction.up == true" class="text-green-500" size="15" />
+              <CornerRightDown v-else class="text-red-500" size="15" />
+              </div>
               <span class="text-[11px] text-[#8f8fb1]">{{
                 transaction.Date
               }}</span>

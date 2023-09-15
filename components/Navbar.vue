@@ -18,21 +18,13 @@ const setColorTheme = (newTheme: Theme) => {
   useColorMode().preference = newTheme;
 };
 
-// const options = [
-//   { value: "Firefox", id: 1 },
-//   { value: "Chrome", id: 2 },
-//   { value: "Safari", id: 3 },
-//   { value: "Opera", id: 4 },
-//   { value: "Internet Explorer", id: 5 },
-// ];
-
 const menu = ref();
 const items = ref([
-  { label: "French", icon: "pi pi-fw pi-search" },
-  { label: "Germany", icon: "pi pi-fw pi-trash" },
-  { label: "Italy", icon: "pi pi-fw pi-trash" },
-  { label: "Russia", icon: "pi pi-fw pi-trash" },
-  { label: "Spain", icon: "pi pi-fw pi-trash" },
+  { label: "French"},
+  { label: "Germany" },
+  { label: "Italy" },
+  { label: "Russia" },
+  { label: "Spain"},
 ]);
 
 const onImageClick = (event) => {

@@ -20,7 +20,6 @@ const navlinks = [
 ];
 const sidebar = useSidebar();
 const mobileSidebar = useMobileSidebar();
-// console.log(count.value);
 </script>
 
 <template>

@@ -19,11 +19,11 @@ const setColorTheme = (newTheme: Theme) => {
 
 const menu = ref();
 const items = ref([
-  { label: "French", icon: "pi pi-fw pi-search" },
-  { label: "Germany", icon: "pi pi-fw pi-trash" },
-  { label: "Italy", icon: "pi pi-fw pi-trash" },
-  { label: "Russia", icon: "pi pi-fw pi-trash" },
-  { label: "Spain", icon: "pi pi-fw pi-trash" },
+  { label: "French" },
+  { label: "Germany" },
+  { label: "Italy" },
+  { label: "Russia" },
+  { label: "Spain" },
 ]);
 
 const onImageClick = (event) => {

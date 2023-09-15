@@ -5,35 +5,41 @@
       "Task": "Flicker",
       "Description": "App improvement",
       "Amount": "$45.234",
-      "Date": "12 Jan 2020"
+      "Date": "12 Jan 2020",
+      "up": true
     },
     {
       "Image": "https://res.cloudinary.com/dpilzo7m6/image/upload/v1694016236/images/intoxica_ws8ndx.jpg",
       "Task": "Intoxica",
       "Description": "Milestone",
       "Amount": "$23.452",
-      "Date": "23 Jan 2020"
+      "Date": "23 Jan 2020",
+      "up": false
+
     },
     {
       "Image": "https://res.cloudinary.com/dpilzo7m6/image/upload/v1694016238/images/digiwatt_znrqef.jpg",
       "Task": "Digiwatt",
       "Description": "Sales executive",
       "Amount": "$78.001",
-      "Date": "4 Apr 2020"
+      "Date": "4 Apr 2020",
+      "up": false
     },
     {
       "Image": "https://res.cloudinary.com/dpilzo7m6/image/upload/v1694016237/images/flicker-male_jirixy.jpg",
       "Task": "Flicker",
       "Description": "Milestone2",
       "Amount": "$37.285",
-      "Date": "4 Apr 2020"
+      "Date": "4 Apr 2020",
+      "up": true
     },
     {
       "Image": "https://res.cloudinary.com/dpilzo7m6/image/upload/v1694016237/images/flicker-male-2_llvgxt.jpg",
       "Task": "Flicker",
       "Description": "App improvement",
       "Amount": "$25.341",
-      "Date": "4 Apr 2020"
+      "Date": "4 Apr 2020",
+      "up": false
     }
   ]
 }

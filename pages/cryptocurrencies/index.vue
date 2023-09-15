@@ -22,22 +22,6 @@ const cryptoData = toRaw(crypto.value.coins);
       </div>
 
       <!-- Cards -->
-      <!-- <div
-        class="flex flex-col lg:flex-row gap-3 w-full justify-between pt-4 pb-3"
-      >
-        <div v-for="crypto in cryptoData" class="w-full md:w-[50%]">
-          <Card
-            :symbol="crypto.symbol"
-            :name="crypto.name"
-            :amount="crypto.amount"
-            :price="crypto.price"
-            :change="crypto.change"
-            :image="crypto.image"
-            :volume="crypto.volume"
-            :up="crypto.up"
-          />
-        </div>
-      </div> -->
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 pt-4 pb-3">
         <div v-for="crypto in cryptoData" class="grid">
           <Card

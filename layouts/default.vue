@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import Sidebar from "primevue/sidebar";
-import { ref } from "vue";
 
-// const visible = ref(false);
 
 const mobileSidebar = useMobileSidebar();
 const sidebar = useSidebar();
