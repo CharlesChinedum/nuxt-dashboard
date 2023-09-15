@@ -11,6 +11,8 @@ export default defineNuxtConfig({
   modules: ["@bootstrap-vue-next/nuxt", "@nuxtjs/color-mode"],
   colorMode: {
     classSuffix: "",
+    preference: "dark", // default value of $colorMode.preference
+    fallback: "dark", // fallback value if not system preference found
   },
   css: [
     "~/assets/css/main.css",
