@@ -45,7 +45,7 @@ const handleDropMenu = () => {
       :class="[$colorMode.preference == 'dark' ? 'bg-darkTheme' : 'bg-white']"
       class="w-full"
     >
-      <div class="flex items-center justify-between px-3 py-2">
+      <div class="flex items-center justify-between px-3 py-3">
         <!-- <Button icon="pi pi-arrow-right" @click="visible = true" /> -->
         <div>
           <Menu
