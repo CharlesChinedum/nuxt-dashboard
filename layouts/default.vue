@@ -16,7 +16,7 @@ const sidebar = useSidebar();
       </div>
 
       <div
-        :class="[mobileSidebar ? ' w-[15rem]' : 'hidden']"
+        :class="[mobileSidebar ? ' w-[17rem]' : 'hidden']"
         class="lg:hidden fixed h-[100vh] bg-darkBlue z-20"
       >
         <MySidebar />

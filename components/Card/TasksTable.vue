@@ -54,7 +54,43 @@ defineProps({
               <span>{{ task.task }}</span>
             </div>
           </BTd>
-          <BTd class="py-3 px-4">{{ task.team }}</BTd>
+          <BTd class="py-3 px-4">
+           <div class="flex gap-2">
+            <div class="relative">
+              <div class="w-7 h-7">
+                <!-- First image -->
+                <div>
+                  <img
+                    src="~/assets/images/flicker.jpg"
+                    alt="Image 1"
+                    class="absolute inset-0 border-[2px] border-white dark:border-darkBody rounded-full w-full h-full object-cover"
+                  />
+                </div>
+
+                <!-- Second image -->
+                <img
+                  src="~/assets/images/user.jpg"
+                  alt="Image 2"
+                  class="absolute inset-x-4 border-[2px] border-white dark:border-darkBody rounded-full w-full h-full object-cover"
+                />
+
+                <!-- Third image -->
+                <img
+                  src="~/assets/images/intoxica.jpg"
+                  alt="Image 3"
+                  class="absolute inset-x-8 border-[2px] border-white dark:border-darkBody rounded-full w-full h-full object-cover"
+                />
+
+                <!-- Fourth image -->
+                <img
+                  src="~/assets/images/flicker-male-2.jpg"
+                  alt="Image 4"
+                  class="absolute inset-x-12 border-[2px] border-white dark:border-darkBody rounded-full w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          </BTd>
           <BTd class="py-3 px-4">{{ task.openTask }}</BTd>
           <BTd
             class="py-3 px-4"
